@@ -18,6 +18,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = { origin: "https://jobilio.vercel.app", methods: ["POST", "GET","PUT","DELETE"], credentials: true }
 
+// const corsOptions = { origin: "http://localhost:5174", methods: ["POST", "GET","PUT","DELETE"], credentials: true }
+
 app.use(cors(corsOptions));
  
 const PORT = process.env.PORT || 3000;
